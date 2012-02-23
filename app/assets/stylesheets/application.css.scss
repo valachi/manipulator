@@ -2,12 +2,18 @@
  *= require_self
  *= require_tree .
 */
-.holder { 
-  width: 980px;
-  margin: 0 auto;
+body {
+  margin: 0;
+  padding: 0;
 }
 
-header { 
+.holder {
+  width: 980px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+header {
   background: url('head980tel.jpg');
   width: 980px;
   height: 270px;
