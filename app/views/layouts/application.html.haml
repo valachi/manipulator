@@ -1,0 +1,14 @@
+!!!
+%html
+  %head
+    =content_tag :title, @title
+    =stylesheet_link_tag "application"
+    =javascript_include_tag "application"
+    =javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"
+    =csrf_meta_tags
+  %body
+    #container
+      .holder
+        %header
+        =yield
+        #footer
