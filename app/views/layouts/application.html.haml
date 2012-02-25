@@ -1,3 +1,4 @@
+#encoding: UTF-8
 !!!
 %html
   %head
@@ -10,5 +11,17 @@
     #container
       .holder
         %header
-        =yield
+          #teaser
+        #left_column
+          %ul
+            %li Главная
+            %li Цены
+            %li Услуги
+            %li Информация
+            %li FAQ
+        #center_column
+          =yield
+        #right_column
+          %p Order form
+        #clear
         #footer
