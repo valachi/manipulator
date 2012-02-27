@@ -1,5 +1,6 @@
 Manipulator::Application.routes.draw do
-  root to: "static#index"
+  root to: 'static#index'
+  match 'info' => 'static#info'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

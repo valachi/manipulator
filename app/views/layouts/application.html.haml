@@ -14,10 +14,10 @@
           #teaser
         #left_column
           %ul
-            %li Главная
+            %li= link_to 'Главная', root_path
             %li Цены
             %li Услуги
-            %li Информация
+            %li= link_to 'Информация', info_path
             %li FAQ
         #center_column
           =yield
