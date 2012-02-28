@@ -1,6 +1,7 @@
 Manipulator::Application.routes.draw do
   root to: 'static#index'
   match 'info' => 'static#info'
+  post 'order_form/send_email', as: :send_email
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

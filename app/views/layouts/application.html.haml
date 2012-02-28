@@ -22,6 +22,6 @@
         #center_column
           =yield
         #right_column
-          %p Order form
+          =render 'shared/form', order_form: OrderForm.new
         #clear
         #footer

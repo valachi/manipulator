@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'haml'
 
 gem 'execjs'
+gem "letter_opener", :group => :development
 
 group :production do
   gem 'pg'

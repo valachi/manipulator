@@ -1,0 +1,15 @@
+=form_for order_form, url: send_email_path do |f|
+  .field
+    =f.label :name, "Ваше ФИО*"
+    =f.text_field :name, placeholder: "Евгений Олегович"
+  .field
+    =f.label :email, "Ваш email"
+    =f.text_field :email, placeholder: "ya@yandex.ru"
+  .field
+    =f.label :tel, "Ваш телефон*"
+    =f.text_field :tel, placeholder: "89045883333"
+  .field
+    =f.label :extra_info, "Ваше сообщение*"
+    =f.text_area :extra_info, placeholder: "Звонить с 9 до 21 вечера"
+  .form_button
+  =f.submit "Отправить"
