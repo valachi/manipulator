@@ -9,9 +9,13 @@
     .field
       =f.label :tel, "Ваш телефон*"
       =f.text_field :tel, placeholder: "89045883333"
+    .field
+      =f.label :serv, "Услуга"
+      %br
+      =f.text_field :serv, placeholder: "Перевозка"
   #bottom_form
     .field
       =f.label :extra_info, "Ваше сообщение*"
       =f.text_area :extra_info, placeholder: "Звонить с 9 до 21 вечера"
     .form_button
-  =f.submit "Отправить"
+    =f.submit "Отправить"

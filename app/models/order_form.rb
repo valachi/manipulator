@@ -2,8 +2,8 @@ class OrderForm
   include ActiveModel::Validations
   include ActiveModel::Conversion
 
-  attr_accessor :name, :email, :tel, :extra_info
-  validates_presence_of :name, :email, :tel, :extra_info
+  attr_accessor :name, :email, :tel, :serv, :extra_info
+  validates_presence_of :name, :email, :tel, :serv, :extra_info
 
   def initialize(attributes = {})
     attributes.each do |name, value|

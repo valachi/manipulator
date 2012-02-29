@@ -18,7 +18,7 @@
             %li= link_to 'Главная', root_path
             %li= link_to 'Цены', prices_path
             %li= link_to 'Услуги', services_path
-            %li= link_to 'Информация', info_path
+            / %li= link_to 'Информация', info_path
             %li= link_to 'FAQ', faq_path
         #center_column
           =yield
@@ -27,3 +27,4 @@
           =render 'shared/form', order_form: OrderForm.new
         #clear
         #footer
+          #test

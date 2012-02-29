@@ -1,7 +1,7 @@
 #encoding: UTF-8
 class OrderFormMailer < ActionMailer::Base
-  default to: "impulse221@yandex.ru",
-          from: "registracia221@gmail.com"
+  default to: "kranbortspb@gmail.com",
+          from: "kranbortspb@gmail.com"
 
   def sendmail(message)
     @message = message

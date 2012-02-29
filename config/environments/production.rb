@@ -69,8 +69,8 @@ Manipulator::Application.configure do
     :address              => "smtp.gmail.com",
     :port                 => 587,
     :domain               => 'gmail.com',
-    :user_name            => 'registracia221',
-    :password             => 'w2p05gfoot',
+    :user_name            => 'kranbort',
+    :password             => 'qwedsa123',
     :authentication       => 'plain',
     :enable_starttls_auto => true  }
 end
