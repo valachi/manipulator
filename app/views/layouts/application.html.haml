@@ -1,8 +1,7 @@
-#encoding: UTF-8
 !!!
 %html
   %head
-    =content_tag :title, @title
+    =content_tag :title, @title || "Аренда манипуляторов в Петербурге"
     =stylesheet_link_tag "application"
     =javascript_include_tag "application"
     =javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"
@@ -27,4 +26,7 @@
           =render 'shared/form', order_form: OrderForm.new
         #clear
         #footer
-          #test
+          #gears
+          #footer_links
+          #footer_tel
+            %p= link_to 'Контактная информация', root_path

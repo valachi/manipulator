@@ -13,6 +13,8 @@ end
 
 gem 'jquery-rails'
 gem 'haml'
+gem 'client_side_validations'
+gem 'settingslogic'
 
 gem 'execjs'
 gem "letter_opener", :group => :development

@@ -5,10 +5,15 @@
   height: 70px
 #top_form
   background: url("forma-up.jpg") repeat scroll 0 0 transparent
-  height: 200px
+  height: 192px
+  padding-top: 8px
 #bottom_form
   background: url("forma-down.jpg") repeat scroll 0 0 transparent
   height: 135px
+#bottom_form input
+  margin-top: 5px
+  position: absolute
+  right: 223px
 label
   color: #1d5870
   font-size: 14px
@@ -16,3 +21,5 @@ label
 #top_form select
   width: 183
 
+.field_with_errors input, .field_with_errors textarea
+  border: 1px solid red
