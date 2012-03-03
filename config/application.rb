@@ -55,5 +55,9 @@ module Manipulator
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '2.0'
+    # add this line to have files autoload from your +lib+ directory
+    config.autoload_paths += %W(#{config.root}/lib)
+    # this line employs the middleware
+    config.middleware.use "NoWww"
   end
 end
