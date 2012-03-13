@@ -22,6 +22,7 @@
             / %li= link_to 'Информация', info_path
             %li= link_to 'Вопрос-ответ', faq_path
           =image_tag "ban-m6.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"
+          =image_tag "ban-m7.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"
         #center_column
           =yield
         #right_column
@@ -33,3 +34,9 @@
           #footer_links
           #footer_tel
             %p= link_to 'Контактная информация', root_path
+          #counter
+            =render 'shared/li_metrika'
+            %br
+            #seovita
+              =link_to 'Создание и продвижение сайта: SEOVITA.ru', 'http://seovita.ru'
+            
