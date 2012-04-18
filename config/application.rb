@@ -53,6 +53,8 @@ module Manipulator
     # Enable the asset pipeline
     config.assets.enabled = true
 
+    config.assets.precompile += ['jquery.prettyPhoto.js']
+
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '2.0'
     # add this line to have files autoload from your +lib+ directory
