@@ -2,9 +2,15 @@
 %html
   %head
     =content_tag :title, @title || "Аренда манипуляторов в Петербурге"
+    %link{ :rel => "shortcut icon", :href => "assets/favicon.ico", :type => "image/x-icon"}
     =stylesheet_link_tag "application"
+    =javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"
     =javascript_include_tag "application"
-    =javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"
+    =javascript_include_tag "jquery.prettyPhoto"
+    :javascript
+        $(document).ready(function(){
+          $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
     =csrf_meta_tags
   %body
     #container
@@ -21,6 +27,7 @@
             %li= link_to 'Услуги', services_path
             / %li= link_to 'Информация', info_path
             %li= link_to 'Вопрос-ответ', faq_path
+            %li= link_to 'Фотогаллерея', gallery_path
           =image_tag "ban-m6.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"
           =image_tag "ban-m7.jpg", title: "Аренда гидроманипулятора", alt: "Аренда гидроманипулятора"
         #center_column

@@ -4,6 +4,7 @@ Manipulator::Application.routes.draw do
   match 'prices' => 'static#prices'
   match 'faq' => 'static#faq'
   match 'services' => 'static#services'
+  match 'gallery' => 'static#gallery'
   post 'order_form/send_email', as: :send_email
 
   # The priority is based upon order of creation:
