@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-gem 'sqlite3'
+gem 'pg'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'client_side_validations'
 gem 'settingslogic'
+gem 'thin'
 
 gem 'execjs'
 gem "letter_opener", :group => :development
