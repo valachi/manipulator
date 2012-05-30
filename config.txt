@@ -1,0 +1,7 @@
+BUNDLE_WITHOUT=development:test
+COMMIT_HASH=efb312b
+CONSOLE_AUTH=app3006223:3f54e4140a7650e6f39774326bb20b97
+LANG=en_US.UTF-8
+LAST_GIT_BY=impulse221@yandex.ru
+RACK_ENV=production
+URL=www.manipulyator-piter.ru
